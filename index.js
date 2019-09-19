@@ -17,7 +17,7 @@
 
 
   // Use the old FeedHenry /cloud/:method-name structure
-  app.use('/cloud', require('./api.js')());
+  app.use('/', require('./api.js')());
 
 
 

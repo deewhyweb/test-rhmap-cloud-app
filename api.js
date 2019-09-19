@@ -21,13 +21,19 @@ function apiRoute() {
 //     res.json({msg: 'Hello updated2 ' + world});
 //   });
 
-  route.get('/createUser', function(req, res, next) {
-    console.log(new Date(), 'In route GET /createUser');
-    dbTest.createUser();
-    res.json({success:true});
+
+  route.post('/user', function(req, res, next) {
+    console.log(new Date(), 'In route POST /user');
+    dbTest.createUser(req.body.dbName, req.body.username, req.body.password, function(err, response){
+        if (err) {
+            res.json({err: err})
+        } else {
+            res.json(response);
+        }
+    });
+
  
   });
-  
   
 
   return route;
