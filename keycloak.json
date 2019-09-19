@@ -1,11 +1,11 @@
 {
-    "realm": "TKE",
-    "auth-server-url": "https://rencrypt-sso-test.3a7a.tke.openshiftapps.com/auth",
-    "ssl-required": "external",
-    "resource": "tech-connect",
-    "credentials": {
-      "secret": "bb508fe9-8aa1-48cb-96de-442aefd49b21"
-    },
-    "confidential-port": 0,
-    "bearerOnly": true
-  }
+  "realm": "TKE",
+  "auth-server-url": "https://rencrypt-sso-test.3a7a.tke.openshiftapps.com/auth",
+  "ssl-required": "external",
+  "resource": "tech-connect",
+  "credentials": {
+    "secret": "bb508fe9-8aa1-48cb-96de-442aefd49b21"
+  },
+  "confidential-port": 0,
+  "bearerOnly": true
+}
